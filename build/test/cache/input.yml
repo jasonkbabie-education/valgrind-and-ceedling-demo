@@ -107,6 +107,19 @@
   :includes: []
   :file_suffix: _runner
 :tools:
+  :pre_test_fixture_execute:
+    :executable: valgrind
+    :arguments:
+    - "--track-origins=yes"
+    - "--leak-check=full"
+    - "--show-leak-kinds=all"
+    - "--errors-for-leak-kinds=all"
+    - "--error-exitcode=10"
+    - "${1}"
+    :name: pre_test_fixture_execute
+    :stderr_redirect: :none
+    :background_exec: :none
+    :optional: false
   :test_compiler:
     :executable: gcc
     :name: default_test_compiler
@@ -229,9 +242,11 @@
   :enabled:
   - stdout_pretty_tests_report
   - module_generator
+  - command_hooks
   :display_raw_test_results: false
   :stdout_pretty_tests_report_path: "/var/lib/gems/2.7.0/gems/ceedling-0.31.1/lib/../plugins/stdout_pretty_tests_report"
   :module_generator_path: "/var/lib/gems/2.7.0/gems/ceedling-0.31.1/lib/../plugins/module_generator"
+  :command_hooks_path: "/var/lib/gems/2.7.0/gems/ceedling-0.31.1/lib/../plugins/command_hooks"
 :gcov:
   :html_report: true
   :html_report_type: basic
