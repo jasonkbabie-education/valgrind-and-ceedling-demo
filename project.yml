@@ -33,6 +33,8 @@
     - src/**
   :support:
     - test/support
+  :include:
+    - external/include/**
 
 :defines:
   # in order to add common defines:
@@ -80,6 +82,7 @@
   :common: &common_libraries []
   :test:
     - *common_libraries
+    - external/lib/libmy_math.so
   :release:
     - *common_libraries
 
