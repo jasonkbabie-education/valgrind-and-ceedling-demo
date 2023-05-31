@@ -75,7 +75,7 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_urls.c");
-  run_test(test_convertToHTTPS, "test_convertToHTTPS", 15);
+  run_test(test_convertToHTTPS, "test_convertToHTTPS", 11);
 
   return UnityEnd();
 }

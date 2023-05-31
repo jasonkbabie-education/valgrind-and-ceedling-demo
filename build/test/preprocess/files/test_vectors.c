@@ -1,3 +1,4 @@
+#include "/var/lib/gems/2.7.0/gems/ceedling-0.31.1/vendor/unity/src/unity_internals.h"
 #include "test/support/vectors_helper.h"
 #include "src/vectors.h"
 #include "/var/lib/gems/2.7.0/gems/ceedling-0.31.1/vendor/unity/src/unity.h"

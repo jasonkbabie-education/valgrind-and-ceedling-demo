@@ -15,3 +15,5 @@ src/urltestlib1.c:
 - TEST
 src/urltestlib2.c:
 - TEST
+src/my_math.c:
+- TEST

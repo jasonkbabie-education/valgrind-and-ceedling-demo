@@ -8,7 +8,7 @@
   :use_preprocessor_directives: false
   :use_deep_dependencies: false
   :generate_deep_dependencies: true
-  :auto_link_deep_dependencies: false
+  :auto_link_deep_dependencies: true
   :test_file_prefix: test_
   :options_paths: []
   :release_build: false
