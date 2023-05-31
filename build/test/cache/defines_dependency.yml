@@ -3,3 +3,7 @@ src/a.c:
 - TEST
 src/adder.c:
 - TEST
+src/vectors.c:
+- TEST
+test/support/vectors_helper.c:
+- TEST
